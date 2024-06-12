@@ -30,11 +30,9 @@ class App {
 
 
       this.$app = document.querySelector("#app");
-      this.$app = document.querySelector("#app");
       this.$firebaseAuthContainer = document.querySelector("#firebaseui-auth-container");
       this.$authUserText = document.querySelector(".auth-user");
       this.$logoutButton = document.querySelector(".logout");
-
 
       this.ui = new firebaseui.auth.AuthUI(auth);
       this.handleAuth();
@@ -71,8 +69,8 @@ class App {
       })
 
       this.$logoutButton.addEventListener("click", (event) => {
-          this.handleLogout();
-      })
+        this.handleLogout();
+    });
 
   }
   handleAuth() {
@@ -283,30 +281,31 @@ redirectToAuth() {
           <div class="title">${note.title}</div>
           <div class="text">${note.text}</div>
           <div class="note-footer">
-              <div class="tooltip">
-                  <span class="material-icons-outlined hover small-icon">add_alert</span>
-                  <span class="tooltip-text">Remind me</span>
-              </div>
-              <div class="tooltip">
-                  <span class="material-icons-outlined hover small-icon">person_add</span>
-                  <span class="tooltip-text">Collaborator</span>
-              </div>
-              <div class="tooltip">
-                  <span class="material-icons-outlined hover small-icon">palette</span>
-                  <span class="tooltip-text">Change Color</span>
-              </div>
-              <div class="tooltip">
-                  <span class="material-icons-outlined hover small-icon">image</span>
-                  <span class="tooltip-text">Add Image</span>
-              </div>
-              <div class="tooltip archive">
-                  <span class="material-icons-outlined hover small-icon">archive</span>
-                  <span class="tooltip-text">Archive</span>
-              </div>
-              <div class="tooltip">
-                  <span class="material-icons-outlined hover small-icon">more_vert</span>
-                  <span class="tooltip-text">More</span>
-              </div>
+             <div class="tooltip">
+                            <span class="material-symbols-outlined hover small-icon ">add_alert</span>
+                            <span class="tooltip-text">Remind Me</span>   
+                        </div>
+                        <div class="tooltip">
+                            <span class="material-symbols-outlined hover small-icon ">person_add</span>
+                            <span class="tooltip-text">Collaborator</span>   
+                        </div>
+                        <div class="tooltip">
+                            <span class="material-symbols-outlined hover small-icon ">palette</span>
+                            <span class="tooltip-text">Change Colour</span>   
+                        </div>
+                        <div class="tooltip">
+                            <span class="material-symbols-outlined hover small-icon ">image</span>
+                            <span class="tooltip-text">New Image</span>   
+                        </div>
+                        <div class="tooltip archive">
+                            <span class="material-symbols-outlined hover small-icon ">archive</span>
+                            <span class="tooltip-text">Archive</span>   
+                        </div>
+                        <div class="tooltip">
+                            <span class="material-symbols-outlined hover small-icon ">more_vert</span>
+                            <span
+                             class="tooltip-text">More</span>   
+                        </div>
           </div>
       </div>
       `
